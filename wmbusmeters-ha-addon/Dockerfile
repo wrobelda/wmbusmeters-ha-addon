@@ -7,7 +7,7 @@ RUN apk add --no-cache alpine-sdk gcc linux-headers libxml2-dev cmake libusb-dev
 
 ADD https://api.github.com/repos/wmbusmeters/wmbusmeters/git/refs/heads/master version.json
 RUN git clone https://github.com/steve-m/librtlsdr.git && \
-    git clone https://github.com/wmbusmeters/wmbusmeters.git && \
+    git clone https://github.com/wrobelda/wmbusmeters.git && \
     git clone https://github.com/weetmuts/rtl-wmbus.git && \
     git clone https://github.com/merbanan/rtl_433.git && \
     git clone https://github.com/ED6E0F17/rtl_reset.git
